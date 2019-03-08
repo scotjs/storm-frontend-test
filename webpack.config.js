@@ -41,5 +41,10 @@ module.exports = {
 		  		loader: 'file-loader'
 			}
 		}]
+	},
+	resolve: {
+		alias: {
+		  vue: 'vue/dist/vue.js'
+		}
 	}
 }

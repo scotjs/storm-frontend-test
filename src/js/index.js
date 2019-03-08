@@ -1,3 +1,7 @@
-{
-	console && console.log('%c careers@stormid.com ', 'background: #272727; color: #ffffff');
-}
+import Vue from 'vue';
+import { List } from './components/list';
+
+var App = new Vue({
+	el: '#app'
+});
+export default App;
