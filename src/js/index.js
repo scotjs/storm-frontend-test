@@ -2,7 +2,7 @@ import Vue from 'vue';
 import axios from 'axios';
 import { loadProgressBar } from 'axios-progress-bar';
 
-import { ListItem } from './components/listItem';
+import ListItem from './components/listItem';
 import { Top } from './components/top';
 import '../css/index.scss';
 
@@ -12,7 +12,7 @@ var App = new Vue({
 		tasks: null
 	},
 	components: {
-		'ListItem' : ListItem
+		'listItem' : ListItem
 	},
 	mounted () {
 		loadProgressBar();
@@ -36,3 +36,4 @@ export default App;
 // component for list?
 // split css imports per component
 // move axios call to separate file
+// improve hiding message on load when no tasks found
