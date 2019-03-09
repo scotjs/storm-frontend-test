@@ -1,7 +1,44 @@
 /* Forms
 -------------------------------------------------------------- */
 
+form{
+    background: rgba($color: $black, $alpha: 0.1);
+    padding: $baseline;
+}
+
+input[type=text]{
+    border-radius: 10px;
+    margin: $baseline 0; 
+    padding: $baseline/2;  
+    width: 100%;
+}
+
+select{
+    border-radius: 10px;
+    color: $black;
+    margin-left: $baseline/2;
+    padding: $baseline/4;
+    text-align: center;
+    width: auto;
+}
+
 input[type=checkbox]{
     border-radius: none;
     margin-right: $baseline/2;
+}
+
+.errors{
+    color: $red;
+    padding-top: $baseline;
+    li{
+        padding: 0;
+    }
+}
+
+input[type=submit]{
+    background: $white;
+    border-radius: 5px;
+    margin-top: $baseline;
+    padding: $baseline/4;
+    width: 100%;
 }

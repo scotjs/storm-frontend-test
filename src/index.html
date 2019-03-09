@@ -8,16 +8,7 @@
 <body>
 	<div id="app">
 		<Top></Top>
-		<ul v-if="tasks">
-			<ListItem
-				v-for="task in tasks"
-				v-bind:key="task.id"
-				v-bind:task="task"
-				v-bind:tasks="tasks"
-				v-bind:class="{importance0: task.importance == 0, importance1: task.importance == 1, importance2: task.importance == 2}"
-			></ListItem>
-		</ul>
-		<p v-else>No more tasks, relax!</p>
+		<router-view></router-view>
 	</div>
 </body>
 </html>
