@@ -1,6 +1,21 @@
 #app{
     border-top: 7px solid $black;
     font-family: 'Roboto';
-    margin: 0 auto;
+    margin: $baseline auto;
     max-width: $small;
+}
+
+// loading progress bar on axios request
+#nprogress .bar {
+    background: $importance-2 !important;
+    height: 10px;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px $importance-2, 0 0 5px $importance-2 !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: $importance-2 !important;
+    border-left-color: $importance-2 !important;
 }
