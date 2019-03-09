@@ -1,0 +1,26 @@
+ul{
+    font-size: $baseline * 0.7;
+    margin: 0 auto;
+    max-width: $small;
+
+    li{
+        list-style: none;
+        margin-bottom: $baseline/3;
+        padding: $baseline/2 $baseline;
+
+        &.importance0{
+            background: rgba($color: $importance-0, $alpha: 0.1);
+            border-left: 5px solid $importance-0;
+        }
+        
+        &.importance1{
+            background: rgba($color: $importance-1, $alpha: 0.1);
+            border-left: 5px solid $importance-1;
+        }
+        
+        &.importance2{
+            background: rgba($color: $importance-2, $alpha: 0.1);
+            border-left: 5px solid $importance-2;
+        }
+    }
+}
