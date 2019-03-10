@@ -53,12 +53,31 @@ Vue.component('create', {
         createTask: function(event){
             this.task = {
                 title: this.title,
-                importance: this.importance
+                importance: this.importance.toString()
             }
-            console.log('post');   
+            // console.log(this.task);
+            // try{
+            //     axios
+            //     .post('http://localhost:4000/api/task/', 
+            //     {
+            //         task: this.task
+            //     })
+            //     .catch(function(e){
+            //         console.log(e);
+            //     })
+            //     .then((response) => {   
+            //         console.log(response);
+            //         if(this.valid){
+            //             router.replace({ path: '/' });
+            //         }    
+            //     });   
+            // }catch(e){
+            //     console.log(e);
+            // }  
+            
             if(this.valid){
-                router.replace({ path: '/task/confirmation' });
-            }            
+                router.replace({ path: '/' });
+            }  
         }
     },
     mounted: function(){
