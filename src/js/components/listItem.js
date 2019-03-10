@@ -6,7 +6,7 @@ const ListItem =
 Vue.component('listitem', {
     name: 'ListItem',
     props: ['task', 'tasks'],
-    template: '<li><input type="checkbox" v-model="isDone" v-on:click="markAsDone" v-bind:value="isDone" />{{task.title}} - {{isDone}}<a class="deleteLink" v-on:click="deleteTask">x</a></li>',
+    template: '<li><input type="checkbox" v-model="isDone" v-on:click="markAsDone" v-bind:value="isDone" aria-label="done"/>{{task.title}} - {{isDone}}<a class="deleteLink" v-on:click="deleteTask">x</a></li>',
     data: function(){
         return {
             isDone: this.task.isDone == true,

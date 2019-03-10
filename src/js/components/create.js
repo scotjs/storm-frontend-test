@@ -16,12 +16,12 @@ Vue.component('create', {
         }
     },
     template: `<div>
-            <h2>Create a new item</h2>           
-            <form id="create">
+            <h2 role="banner">Create a new item</h2>           
+            <form id="create" role="form">
                 <label>Title:</label>
-                <input type="text" v-model="title"/>
+                <input type="text" v-model="title" aria-label="Item title"/>
                 <label>Importance:</label>
-                <select v-model="importance">
+                <select v-model="importance" aria-label="Importance">
                     <option value=0>High</option>
                     <option value=1>Medium</option>
                     <option value=2>Low</option>
